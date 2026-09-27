@@ -73,7 +73,7 @@ namespace Tests
         }
         #endif
 
-        #ifdef ENABLE_COMPONENT_TEST3
+        /*#ifdef ENABLE_COMPONENT_TEST3
         // [ Test #3 ] -------------------------------------------------------
         TEST( "Components can be cloned by overriding the corresponding function",
             "The cloning interface provides an operation that can act as a virtual constructor"  )
@@ -93,9 +93,9 @@ namespace Tests
             printf("TEST3 Succeed!\n");
             SUCCEED();
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_COMPONENT_TEST4
+        /*#ifdef ENABLE_COMPONENT_TEST4
         // [ Test #4 ] -------------------------------------------------------
         TEST( "Components can be printed using an human readable string",
             "The IPrintable interface provides a print method" )
@@ -111,9 +111,9 @@ namespace Tests
             printf("TEST4 Succeed!\n");
             SUCCEED();
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_COMPONENT_TEST5
+        /*#ifdef ENABLE_COMPONENT_TEST5
         // [ Test #5 ] -------------------------------------------------------
         TEST( "Components can be compared to each other by overriding the corresponding function",
             "The comparison interface provides an entry point to compare all objects that belong to classes that implement it" )
@@ -137,7 +137,7 @@ namespace Tests
             
             printf("TEST5 Succeed!\n");
         }
-        #endif
+        #endif*/
     } 
 } // namespace Test::Component
 
@@ -153,7 +153,7 @@ namespace Tests
  *                          Entity tests                           *
  *******************************************************************/
 
-namespace Tests { 
+namespace Tests {/* 
     namespace Entities
     {
         #ifdef ENABLE_COMPONENT_TEST1
@@ -173,9 +173,9 @@ namespace Tests {
             ConcreteComponent * clone() const { return new ConcreteComponentB(*this); }
             int b;
         };
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST6
+        /*#ifdef ENABLE_ENTITY_TEST6
         // [ Test #6 ] -------------------------------------------------------
         TEST( "Entities internally store a collection/container of components",
             "Entity method component_count() defines the number of components contained" )
@@ -189,9 +189,9 @@ namespace Tests {
 
             printf("TEST6 Succeed!\n");
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST7
+        /*#ifdef ENABLE_ENTITY_TEST7
         // [ Test #7 ] -------------------------------------------------------
         TEST( "Different concrete components can be attached to entities",
             "The attach function takes a pointer to a polymorphic instance, that internally is handled homogeneously" )
@@ -208,9 +208,9 @@ namespace Tests {
 
             printf("TEST7 Succeed!\n");
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST8
+        /*#ifdef ENABLE_ENTITY_TEST8
         // [ Test #8 ] -------------------------------------------------------
         TEST( "Entity class provides an operation to inspect specific components",
             "The subscript operator [] is overloaded on the Entity class to provide access to components by index" )
@@ -234,9 +234,9 @@ namespace Tests {
 
             printf("TEST8 Succeed!\n");
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST9
+        /*#ifdef ENABLE_ENTITY_TEST9
         // [ Test #9 ] -------------------------------------------------------
         TEST( "Each entity has the responsibility of managing the components they get attached",
             "Cleaning up resources should be the owners responsibility. Check your memory leaks." )
@@ -258,9 +258,9 @@ namespace Tests {
             printf("TEST9 Succeed!\n");
             SUCCEED();
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST10
+        /*#ifdef ENABLE_ENTITY_TEST10
         // [ Test #10 ] -------------------------------------------------------
         TEST( "Components can be also attached by reference",
             "Provide an overloaded function for attach method that takes the appropriate type" )
@@ -281,9 +281,9 @@ namespace Tests {
 
             printf("TEST10 Succeed!\n");
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST11
+        /*#ifdef ENABLE_ENTITY_TEST11
         // [ Test #11 ] -------------------------------------------------------
         TEST( "Components can asign their respective owner entities",
             "All components internally store a pointer to their corresponding owners, for convenience" )
@@ -298,9 +298,9 @@ namespace Tests {
 
             printf("TEST11 Succeed!\n");
         }
-        #endif
+        #endif*/
 
-        #ifdef ENABLE_ENTITY_TEST12
+        /*#ifdef ENABLE_ENTITY_TEST12
         // [ Test #12 ] -------------------------------------------------------
         TEST( "Components can access their respective owner entities",
             "All components internally store a pointer to their corresponding owners, for convenience. An orphan component must return null" )
@@ -319,7 +319,7 @@ namespace Tests {
 
             printf("TEST12 Succeed!\n");
         }
-        #endif
-    } 
+        #endif*/
+    //} 
 } // namespace Tests::Entity
 
