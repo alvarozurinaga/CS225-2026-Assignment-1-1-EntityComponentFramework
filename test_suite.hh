@@ -73,7 +73,7 @@ namespace Tests
         }
         #endif
 
-        /*#ifdef ENABLE_COMPONENT_TEST3
+        #ifdef ENABLE_COMPONENT_TEST3
         // [ Test #3 ] -------------------------------------------------------
         TEST( "Components can be cloned by overriding the corresponding function",
             "The cloning interface provides an operation that can act as a virtual constructor"  )
@@ -93,7 +93,7 @@ namespace Tests
             printf("TEST3 Succeed!\n");
             SUCCEED();
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_COMPONENT_TEST4
         // [ Test #4 ] -------------------------------------------------------
