@@ -8,3 +8,9 @@ Entity::~Entity()
         delete components[i];
     }
 }
+
+void Entity::attach(const Component& component)
+{
+    Component* copy = component.clone();
+    attach(copy);
+}

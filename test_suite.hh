@@ -260,7 +260,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST10
+        #ifdef ENABLE_ENTITY_TEST10
         // [ Test #10 ] -------------------------------------------------------
         TEST( "Components can be also attached by reference",
             "Provide an overloaded function for attach method that takes the appropriate type" )
@@ -281,7 +281,7 @@ namespace Tests {
 
             printf("TEST10 Succeed!\n");
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST11
         // [ Test #11 ] -------------------------------------------------------

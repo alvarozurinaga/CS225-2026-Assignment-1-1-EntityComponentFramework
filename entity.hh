@@ -16,10 +16,13 @@ class Entity
         components.push_back(component);
     }
 
+    void attach(const Component& component);
+    
     Component& operator[](std::size_t index)
     {
         return *(components[index]);
     }
+
 
     ~Entity();
 

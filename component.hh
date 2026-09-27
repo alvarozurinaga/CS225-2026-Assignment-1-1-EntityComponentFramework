@@ -31,7 +31,7 @@ class Component : public ICloneable, public IPrintable, public IComparable
         return id;
     }
 
-    ICloneable* clone() const override
+    Component* clone() const override
     {
         return new Component(*this);
     }
