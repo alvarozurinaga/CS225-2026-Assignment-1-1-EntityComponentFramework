@@ -191,7 +191,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST7
+        #ifdef ENABLE_ENTITY_TEST7
         // [ Test #7 ] -------------------------------------------------------
         TEST( "Different concrete components can be attached to entities",
             "The attach function takes a pointer to a polymorphic instance, that internally is handled homogeneously" )
@@ -208,7 +208,7 @@ namespace Tests {
 
             printf("TEST7 Succeed!\n");
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST8
         // [ Test #8 ] -------------------------------------------------------

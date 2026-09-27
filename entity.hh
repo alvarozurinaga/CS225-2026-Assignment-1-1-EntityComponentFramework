@@ -11,6 +11,11 @@ class Entity
         return components.size();
     }
 
+    void attach(Component* component)
+    {
+        components.push_back(component);
+    }
+
     private:
     std::vector<Component*> components;
 };
