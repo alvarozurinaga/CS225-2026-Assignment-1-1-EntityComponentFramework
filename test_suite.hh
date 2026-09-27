@@ -236,7 +236,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST9
+        #ifdef ENABLE_ENTITY_TEST9
         // [ Test #9 ] -------------------------------------------------------
         TEST( "Each entity has the responsibility of managing the components they get attached",
             "Cleaning up resources should be the owners responsibility. Check your memory leaks." )
@@ -258,7 +258,7 @@ namespace Tests {
             printf("TEST9 Succeed!\n");
             SUCCEED();
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST10
         // [ Test #10 ] -------------------------------------------------------

@@ -21,6 +21,8 @@ class Entity
         return *(components[index]);
     }
 
+    ~Entity();
+
     private:
     std::vector<Component*> components;
 };
