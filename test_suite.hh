@@ -95,7 +95,7 @@ namespace Tests
         }
         #endif
 
-        /*#ifdef ENABLE_COMPONENT_TEST4
+        #ifdef ENABLE_COMPONENT_TEST4
         // [ Test #4 ] -------------------------------------------------------
         TEST( "Components can be printed using an human readable string",
             "The IPrintable interface provides a print method" )
@@ -111,7 +111,7 @@ namespace Tests
             printf("TEST4 Succeed!\n");
             SUCCEED();
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_COMPONENT_TEST5
         // [ Test #5 ] -------------------------------------------------------
