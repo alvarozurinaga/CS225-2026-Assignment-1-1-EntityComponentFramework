@@ -210,7 +210,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST8
+        #ifdef ENABLE_ENTITY_TEST8
         // [ Test #8 ] -------------------------------------------------------
         TEST( "Entity class provides an operation to inspect specific components",
             "The subscript operator [] is overloaded on the Entity class to provide access to components by index" )
@@ -234,7 +234,7 @@ namespace Tests {
 
             printf("TEST8 Succeed!\n");
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST9
         // [ Test #9 ] -------------------------------------------------------

@@ -16,6 +16,11 @@ class Entity
         components.push_back(component);
     }
 
+    Component& operator[](std::size_t index)
+    {
+        return *(components[index]);
+    }
+
     private:
     std::vector<Component*> components;
 };
