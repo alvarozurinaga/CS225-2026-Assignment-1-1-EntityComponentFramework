@@ -1,5 +1,8 @@
 #include <iostream>
 
+//Forward declaration
+class Entity;
+
 class ICloneable
 {
     public:
@@ -25,6 +28,8 @@ class Component : public ICloneable, public IPrintable, public IComparable
 {
     protected:
     int id;
+    Entity* owner = nullptr;
+
     public:
     int get_id() const
     {
@@ -46,6 +51,16 @@ class Component : public ICloneable, public IPrintable, public IComparable
         const Component& other_component = dynamic_cast<const Component&>(other);
 
         return id==other_component.get_id();
+    }
+
+    void set_owner(Entity* entity)
+    {
+        owner = entity;
+    }
+
+    Entity* get_owner() const
+    {
+        return owner;
     }
 };
 

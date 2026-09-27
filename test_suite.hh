@@ -283,7 +283,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST11
+        #ifdef ENABLE_ENTITY_TEST11
         // [ Test #11 ] -------------------------------------------------------
         TEST( "Components can asign their respective owner entities",
             "All components internally store a pointer to their corresponding owners, for convenience" )
@@ -298,7 +298,7 @@ namespace Tests {
 
             printf("TEST11 Succeed!\n");
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST12
         // [ Test #12 ] -------------------------------------------------------
