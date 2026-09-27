@@ -14,10 +14,18 @@ class IPrintable
     virtual ~IPrintable() = default;
 };
 
-class Component : public ICloneable, public IPrintable
+class IComparable
 {
     public:
+    virtual bool compare_to(const IComparable& other) const = 0;
+    virtual ~IComparable() = default;
+};
+
+class Component : public ICloneable, public IPrintable, public IComparable
+{
+    protected:
     int id;
+    public:
     int get_id() const
     {
         return id;
@@ -31,6 +39,13 @@ class Component : public ICloneable, public IPrintable
     void print() const override
     {      
         std::cout<<"This is a Component with id = "<< id <<std::endl;
+    }
+
+    bool compare_to(const IComparable& other) const override
+    {
+        const Component& other_component = dynamic_cast<const Component&>(other);
+
+        return id==other_component.get_id();
     }
 };
 

@@ -113,7 +113,7 @@ namespace Tests
         }
         #endif
 
-        /*#ifdef ENABLE_COMPONENT_TEST5
+        #ifdef ENABLE_COMPONENT_TEST5
         // [ Test #5 ] -------------------------------------------------------
         TEST( "Components can be compared to each other by overriding the corresponding function",
             "The comparison interface provides an entry point to compare all objects that belong to classes that implement it" )
@@ -137,7 +137,7 @@ namespace Tests
             
             printf("TEST5 Succeed!\n");
         }
-        #endif*/
+        #endif
     } 
 } // namespace Test::Component
 
