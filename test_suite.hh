@@ -153,7 +153,7 @@ namespace Tests
  *                          Entity tests                           *
  *******************************************************************/
 
-namespace Tests {/* 
+namespace Tests { 
     namespace Entities
     {
         #ifdef ENABLE_COMPONENT_TEST1
@@ -173,9 +173,9 @@ namespace Tests {/*
             ConcreteComponent * clone() const { return new ConcreteComponentB(*this); }
             int b;
         };
-        #endif*/
+        #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST6
+        #ifdef ENABLE_ENTITY_TEST6
         // [ Test #6 ] -------------------------------------------------------
         TEST( "Entities internally store a collection/container of components",
             "Entity method component_count() defines the number of components contained" )
@@ -189,7 +189,7 @@ namespace Tests {/*
 
             printf("TEST6 Succeed!\n");
         }
-        #endif*/
+        #endif
 
         /*#ifdef ENABLE_ENTITY_TEST7
         // [ Test #7 ] -------------------------------------------------------
@@ -320,6 +320,6 @@ namespace Tests {/*
             printf("TEST12 Succeed!\n");
         }
         #endif*/
-    //} 
+    } 
 } // namespace Tests::Entity
 
