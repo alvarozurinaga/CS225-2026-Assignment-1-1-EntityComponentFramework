@@ -9,6 +9,12 @@ Entity::~Entity()
     }
 }
 
+void Entity::attach(Component* component)
+{
+    components.push_back(component);
+    component->set_owner(this);
+}
+
 void Entity::attach(const Component& component)
 {
     Component* copy = component.clone();

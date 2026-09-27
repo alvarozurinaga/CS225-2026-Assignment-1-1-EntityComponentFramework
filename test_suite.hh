@@ -300,7 +300,7 @@ namespace Tests {
         }
         #endif
 
-        /*#ifdef ENABLE_ENTITY_TEST12
+        #ifdef ENABLE_ENTITY_TEST12
         // [ Test #12 ] -------------------------------------------------------
         TEST( "Components can access their respective owner entities",
             "All components internally store a pointer to their corresponding owners, for convenience. An orphan component must return null" )
@@ -319,7 +319,7 @@ namespace Tests {
 
             printf("TEST12 Succeed!\n");
         }
-        #endif*/
+        #endif
     } 
 } // namespace Tests::Entity
 
